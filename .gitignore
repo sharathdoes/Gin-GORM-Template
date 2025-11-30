@@ -1,0 +1,32 @@
+# Binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+
+# Build Artifacts
+/bin/
+/build/
+dist/
+tmp/
+
+# Go Cache & Modules
+/go/pkg/
+*.mod~
+*.sum~
+
+# Logs
+*.log
+
+# Environment / Secrets
+.env
+
+# IDE / Editor
+.vscode/
+.idea/
+
+# OS + Misc
+.DS_Store
+Thumbs.db
