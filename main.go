@@ -1,6 +1,7 @@
 package main
 
 import (
+	"learn_gin/controllers"
 	"learn_gin/initializers"
 
 	"github.com/gin-gonic/gin"
@@ -19,5 +20,7 @@ func main() {
       "message": "hello",
     })
   })
+
+  router.GET("/createPosts", controllers.PostsCreate)
   router.Run() // listens on 0.0.0.0:8080 by default or we can pass any port as router.Run(":" + port)
 }
